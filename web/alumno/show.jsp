@@ -16,5 +16,7 @@
     <body>
         <h1>EN SHOW</h1>
         Aki mostraremos los datos del alumno, sus postulaciones, y un link a alas vacantes
+
+        Prubea 1
     </body>
 </html>
