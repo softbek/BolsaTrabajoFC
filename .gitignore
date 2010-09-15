@@ -1,0 +1,8 @@
+*
+/web/WEB-INF/sun-web.xml
+!src/
+!README
+!web/
+!.gitignore
+!.git/
+
