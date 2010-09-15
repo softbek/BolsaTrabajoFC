@@ -1,0 +1,19 @@
+Bolsa de trabajo de la facultad de ciencias.
+
+
+greguenle las sigueinte librerias:
+
+Hibernate y el driver de pstgres que vienen con el netbeans
+
+y aparte añadan de struts
+
+commons-fileupload
+commons-loggin
+commons-loggin-api
+freemaker
+ognl
+struts2-core
+xwork-core
+
+tambien tiene que añadir 
+javassis-3.7.ga.jar esta no viene con struts se las pase a martin y noemi si no la tienen la tendras q decargar busquenla con el mismo nombre en google
