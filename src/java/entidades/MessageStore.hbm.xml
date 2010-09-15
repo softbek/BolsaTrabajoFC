@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="model.MessageStore" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="MESSAGE_STORE">
+    <id column="ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property column="MENSAJE" name="message"/>
+    <property column="DATE" name="date" type="timestamp"/>
+  </class>
+</hibernate-mapping>
+<!--
+    Document   : MessageStore.hbm.xml
+    Created on : 5 de septiembre de 2010, 02:47 PM
+    Author     : carlos sanchez perales
+    Description:
+        Clase de muestra para generar un archivo de mapeo de una clase sin relaciones.
+-->

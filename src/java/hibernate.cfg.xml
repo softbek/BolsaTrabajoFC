@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!--<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bolsa_trabajo</property>
+    <property name="hibernate.connection.username">softbek</property>
+    <property name="hibernate.connection.password">softbek</property>
+    <property name="hibernate.hbm2ddl.auto"> create </property>
+    <property name="hibernate.hbm2ddl.autodetection"> hbm </property>
+    <property name="hibernate.show_sql"> true</property>
+  </session-factory>
+</hibernate-configuration>
+-->
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bolsa_trabajo</property>
+    <property name="hibernate.connection.username">softbek</property>
+    <property name="hibernate.connection.password">softbek</property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="entidades/Habilidad.hbm.xml"/>
+    <mapping resource="entidades/Experiencia.hbm.xml"/>
+    <mapping resource="entidades/MessageStore.hbm.xml"/>
+    <mapping resource="entidades/Curriculum.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

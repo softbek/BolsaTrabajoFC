@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+/**	font-family: Verdana, Arial, Helvetica, sans-serif; familia de fuentes para la pagina**/
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+body th {
+	text-align:center;
+}
+
+a:link {
+	text-decoration: none;
+        color: #273a8d;
+}
+
+a:visited {
+	text-decoration: none;
+        color: #273a8d;
+}
+
+a[href]:hover {
+	text-decoration: underline;
+        color: #273a8d;
+}
+
+a:active {
+	text-decoration: none;
+        color: #273a8d;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	border-bottom: 1px solid #000;
+	width: 60%;
+	margin-left: -45px;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+/*termina codigo de tabla*/
+
+#contenedor {
+	width: 762px;
+	text-align:left; /* alinear textos */
+	margin:0 auto; /* centra el contenedor */
+	background: #fff; 
+}
+
+#encabezado {
+	background:#fff url(../images/header.jpg) no-repeat 100% 100%;
+	width: 762px;
+	height: 188px;
+	z-index:11;
+}
+
+
+
+#vinc{
+	text-align:right;
+	padding-left:362px;
+	width:400px;
+	height:51px;
+	z-index:12;
+}
+
+#contenido{
+	margin: 0 0 5px 0;
+	padding: 5px 0 5px 0;
+	border: 1px solid #283A8E;
+	width: 100%;
+	clear:both;
+}
+
+#contener {
+	margin:0 45px 0 50px;
+	padding:0 10px 10px 0;
+}
+
+#contener p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-size: 12px;
+}
+
+
+
+
+/** CSS para el pie de apgina**/
+
+#pie {
+	height:30px;
+	padding:5px 0 10px 0;
+	text-align:center;
+	clear: both;
+}
+
+.pie_datos {
+	background-color:#dcdcdc;
+	padding:2px 0 2px 0;
+	text-align:center;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.pie_derechos {
+	margin-top:0px;
+	background-color:#fff;
+	line-height:1pt;
+	font-size:9px;
+	text-align:center;
+}
+
+#pie a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #519344;
+	font-weight:normal;
+}
+
+
+#pie a:visited {
+	text-decoration: none;
+	color: #519344;
+}
+
+
+#pie a:hover {
+	text-decoration: none;
+	color: #273a8d;
+}
+
+
+
+
+
+
+
+
+
+
+

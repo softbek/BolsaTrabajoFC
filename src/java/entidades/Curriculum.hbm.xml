@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Curriculum" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="CURRICULUM">
+    <id column="CV_ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property column="NOMBRE" name="nombre" not-null="true"/>
+    <property column="AP_PATERNO" name="apPaterno"/>
+    <property column="AP_MATERNO" name="apMaterno"/>
+    <property column="DIRECCION" name="direccion"/>
+    <property column="TELEFONO" name="telefono"/>
+    <property column="CARRERA" name="carrera"/>
+    <property column="EMAIL" name="email"/>
+    <property column="NIV_ESTUDIOS" name="nivEstudios"/>
+    <property column="DATE" name="creacion" type="timestamp"/>
+    <set cascade="all" name="habilidades" table="CV_HABILIDAD">
+      <key column="CV_ID"/>
+      <many-to-many class="model.Habilidad" column="HAB_ID" unique="true"/>
+    </set>
+    <set cascade="all" name="experiencias" table="CV_EXPERIENCIA">
+      <key column="CV_ID"/>
+      <many-to-many class="model.Experiencia" column="EXP_ID" unique="true"/>
+    </set>
+  </class>
+</hibernate-mapping>
+<!--
+    Document   : Curriculum.hbm.xml
+    Created on : 5 de septiembre de 2010, 02:47 PM
+    Author     : carlos
+    Description:
+        Purpose of the document follows.
+-->

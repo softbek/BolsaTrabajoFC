@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Experiencia" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="EXPERIENCIA">
+    <id column="EXP_ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property column="NOMBRE" name="lugar"/>
+    <property column="PERIODO_IN" name="periodoIn"/>
+    <property column="PERIODO_FIN" name="periodoFin"/>
+    <property column="PUESTO" name="puesto"/>
+    <property column="DATE" name="creacion" type="timestamp"/>
+  </class>
+</hibernate-mapping>
+<!--
+    Document   : Experiencia.hbm.xml
+    Created on : 5 de septiembre de 2010, 03:08 PM
+    Author     : carlos
+    Description:
+        Purpose of the document follows.
+-->

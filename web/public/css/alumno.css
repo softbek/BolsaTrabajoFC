@@ -1,0 +1,68 @@
+/* 
+    Document   : alumno
+    Created on : 11/09/2010, 12:36:27 PM
+    Author     : carlos
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#sesion{
+    padding:10px;
+    width: 40%;
+    margin:auto;
+}
+
+#sesion h2{
+    text-align: center;
+    margin:auto;
+}
+
+#sesion #enviar{
+    text-align:right;
+}
+
+#sesion #registro_link{
+    text-align:right;
+    
+}
+
+#sesion #registro_link a{
+    color:#519344;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:normal;
+}
+
+#sesion #registro_link a:link{
+    text-decoration:none;
+}
+
+
+
+#sesion #registro_link a:hover{
+    color:#273A8D;
+    text-decoration:none;
+}
+
+
+/** Css para la vista de registro**/
+#registro{
+    padding:10px;
+    width: 50%;
+    margin:auto;
+}
+
+
+#registro h2{
+    text-align: center;
+    margin:auto;
+}
+
+#registro #enviar{
+    text-align:right;
+}
