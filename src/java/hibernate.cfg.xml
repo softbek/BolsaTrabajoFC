@@ -20,12 +20,14 @@
     <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bolsa_trabajo</property>
     <property name="hibernate.connection.username">softbek</property>
     <property name="hibernate.connection.password">softbek</property>
-    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.show_sql">true</property>
-    <mapping resource="entidades/Habilidad.hbm.xml"/>
+    <!--<mapping resource="entidades/Habilidad.hbm.xml"/>
     <mapping resource="entidades/Experiencia.hbm.xml"/>
     <mapping resource="entidades/MessageStore.hbm.xml"/>
-    <mapping resource="entidades/Curriculum.hbm.xml"/>
+
+    <mapping resource="entidades/Curriculum.hbm.xml"/>-->
+    <mapping resource="entidades/alumno.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -19,6 +19,13 @@
 			<result>/index.jsp</result>
 		</action>
 
+                <!--acciones para login -->
+
+                <action name="sesionAlumnoLogin" class="action.AlumnoSesionAction" method="login">
+			<result name="success">/alumno/show.jsp</result>
+                        <result name="error">/alumno/sesion.jsp</result>
+		</action>
+
 
                 <!--Acciones para alumno-->
 
@@ -26,24 +33,31 @@
 			<result>/alumno/sesion.jsp</result>
 		</action>
 
-                <action name="alumno_new">
+                
+
+                <action name="alumno_new" class="action.AlumnoAction" method="newA">
                     <result> /alumno/new.jsp</result>
                 </action>
 
                 <action name="alumno_create" class="action.AlumnoAction" method="create">
                     <result name="success"> /alumno/show.jsp</result>
+                    <result name="error"> /alumno/new.jsp</result>
                 </action>
 
-                <action name="alumno_index">
+                <action name="alumno_index" class="action.AlumnoAction" method="index">
 			<result>/alumno/index.jsp</result>
 		</action>
 
-                <action name="alumno_show">
+                <action name="alumno_show" class="action.AlumnoAction" method="show">
                     <result> /alumno/show.jsp</result>
                 </action>
 
-                <action name="alumno_edit">
+                <action name="alumno_edit" class="action.AlumnoAction" method="edit">
                     <result> /alumno/edit.jsp</result>
+                </action>
+
+                <action name="alumno_update" class="action.AlumnoAction" method="update">
+                    <result name="success"> /alumno/show.jsp </result>
                 </action>
 
 

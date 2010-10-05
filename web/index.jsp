@@ -15,6 +15,7 @@
     	<meta name="keywords" content="ciencias, science, science school, school of sciences, facultad de ciencias, unam, bolsa trabajo, trabajo, bolsa, ">
             <link rel="icon" type="image/png" href="http://www.fciencias.unam.mx/imgs/2/favicon.png">
             <link rel="stylesheet" type="text/css" href="public/css/ciencias.css">
+             
     </head>
     <body id="Body">
         <div id= "contenedor">

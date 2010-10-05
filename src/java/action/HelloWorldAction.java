@@ -7,8 +7,8 @@ package action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import model.Curriculum;
-import model.EntityManager;
-import model.EntityManagerCurriculum;
+import DBManager.EntityManager;
+import DBManager.EntityManagerCurriculum;
 import model.Habilidad;
 import model.MessageStore;
 
@@ -25,14 +25,14 @@ public class HelloWorldAction extends ActionSupport {
 
     @Override
 	public String execute() throws Exception {
-                Curriculum c = new Curriculum();
+                /*Curriculum c = new Curriculum();
                 Habilidad h = new Habilidad();
                 h.setNombre("se correr");
                 c.setNombre("Carlos");
                 boolean b;
                 b = EntityManager.save(c);
                 b= EntityManagerCurriculum.addHabilidad(c.getId(), h);
-                Curriculum c2 = EntityManagerCurriculum.getCurriculum(c.getId());
+                Curriculum c2 = EntityManagerCurriculum.getCurriculum(c.getId());*/
 		return SUCCESS;
 	}
 

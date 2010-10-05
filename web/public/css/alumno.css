@@ -50,19 +50,110 @@
 }
 
 
+
+#login{
+    text-align: right;
+}
+
+#log_out{
+    text-align: right;
+}
+
+#nota{
+    text-align: center;
+    font-size: 10px;
+}
+
 /** Css para la vista de registro**/
-#registro{
+#new{
     padding:10px;
     width: 50%;
     margin:auto;
 }
 
 
-#registro h2{
+#new h2{
     text-align: center;
     margin:auto;
 }
 
-#registro #enviar{
+/*#registro tr{
+    height: 30px;
+}*/
+
+#new .tdLabel{
+    width:150px;
+}
+
+
+#new #enviar{
     text-align:right;
 }
+
+
+
+/**css para la vista de show **/
+
+#show{
+    padding:10px;
+    width: 95%;
+    margin:auto;
+}
+
+#show h2{
+    text-align: center;
+    margin:auto;
+}
+
+#show h4{
+    text-align: center;
+    margin:auto;
+}
+
+#show #datos_alumno{
+    border:1px solid silver;
+    width: 70%;
+    padding: 10px;
+}
+
+#show #datos_alumno tr{
+    height: 25px;
+}
+
+#show .tdLabel{
+    width:150px;
+}
+
+#show #lista_vacantes{
+    border:1px solid silver;
+    padding: 10px;
+
+}
+
+/** Css para la vista de edicion**/
+#edit{
+    padding:10px;
+    width: 50%;
+    margin:auto;
+}
+
+
+#edit h2{
+    text-align: center;
+    margin:auto;
+}
+
+#edit .tdLabel{
+    width:150px;
+}
+
+
+#edit #enviar{
+    text-align:right;
+}
+
+
+
+
+
+

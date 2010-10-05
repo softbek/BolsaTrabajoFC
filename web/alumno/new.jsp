@@ -1,6 +1,5 @@
-
 <%--
-    Document   : sesion
+    Document   : Pagina para crear un nuevo alumno
     Created on : 11/09/2010, 12:22:11 PM
     Author     : carlos sanchez pera
 --%>
@@ -18,6 +17,7 @@
             <link rel="icon" type="image/png" href="http://www.fciencias.unam.mx/imgs/2/favicon.png">
             <link rel="stylesheet" type="text/css" href="public/css/ciencias.css">
             <link rel="stylesheet" type="text/css" href="public/css/alumno.css">
+            
     </head>
     <body id="Body">
         <div id= "contenedor">
@@ -36,70 +36,30 @@
             </div>
 
             <div id="contenido">
-                <br><br><br><br>
-                <div id="registro">
+                <br><br>
+                <div id="new">
                     <h2>Registro</h2>
                     <br><br><br>
-                    <form name="sesion" action="<s:url action='alumno_create'/>" method="POST">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td>Nombre :&nbsp;</td>
-                                <td><input type="text" name="nombre" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Apellido Paterno :&nbsp;</td>
-                                <td><input type="text" name="ap_pat" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Apellido Materno :&nbsp;</td>
-                                <td><input type="text" name="ap_mat" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Carrera :&nbsp;</td>
-                                <td><input type="text" name="carrera" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Puesto deseado :&nbsp;</td>
-                                <td><input type="text" name="puesto" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Direccion :&nbsp;</td>
-                                <td><input type="text" name="direccion" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Tel&eacute;fono :&nbsp;</td>
-                                <td><input type="text" name="telefono" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Correo electr&oacute;nico :&nbsp;</td>
-                                <td><input type="text" name="email" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Nombre de usuario:&nbsp;</td>
-                                <td><input type="text" name="usuario" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Contraseña:&nbsp;</td>
-                                <td><input type="password" name="password" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>Validar contraseña:&nbsp;</td>
-                                <td><input type="password" name="password" value="" size="30" /></td>
-                            </tr>
-                            <tr>
-                            </tr>
-                            <tr>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td id="enviar"><input type="submit" value="Enviar" name="enviar_button" /></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </form>
+                    
+                    <s:form action="alumno_create" id="new_form">
+                        <s:textfield name="alumno.nombre" size="30" label="Nombre "></s:textfield>
+                        <s:textfield name="alumno.apPat" size="30" label="Apellido paterno "></s:textfield>
+                        <s:textfield name="alumno.apMat" size="30" label="Apellido materno "></s:textfield>
+                        <s:textfield name="alumno.numCta" size="30" label="Num. cuenta "></s:textfield>
+                        <s:textfield name="alumno.carrera" size="30" label="Carrera "></s:textfield>
+                        <s:radio name="alumno.tipo" list="types" label="Tipo de alumno"></s:radio>
+                        <s:textfield name="alumno.puesto" size="30" label="Puesto deseado "></s:textfield>
+                        <s:textfield name="alumno.direccion" size="30" label="Direccion "></s:textfield>
+                        <s:textfield name="alumno.telefono" size="30" label="Teléfono "></s:textfield>
+                        <s:textfield name="alumno.correo" size="30" label="Correo electónico "></s:textfield>
+                        <s:submit name="enviar_button" value="Enviar"></s:submit>
+                    </s:form>
                 </div>
-                <br><br><br><br>
+                <div id="nota">
+                    Nota: Todos los datos son requeridos para llevar a cabo tu registro.
+                </div>
+                <br>
+                <br>
             </div><!--contenido-->
 
             <div id="pie">

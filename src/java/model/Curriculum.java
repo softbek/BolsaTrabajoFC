@@ -25,10 +25,12 @@ public class Curriculum {
     private String  nivEstudios;
     private Date    creacion;
     //habilidades
-    private Set<Habilidad> habilidades = new HashSet<Habilidad>();
+    /*private Set<Habilidad> habilidades = new HashSet<Habilidad>();
     private Set<Experiencia> experiencias = new HashSet<Experiencia>();
-
-    //experiencia.
+    */
+    private String experiencias;
+    private String habilidades;
+    private String idiomas;
 
     //idiomas
     
@@ -112,7 +114,31 @@ public class Curriculum {
         this.telefono = telefono;
     }
 
-    public Set<Experiencia> getExperiencias() {
+    public String getExperiencias(){
+        return experiencias;
+    }
+
+    public void setExperiencias(String experiencias){
+        this.experiencias = experiencias;
+    }
+
+    public String getHabilidades(){
+        return habilidades;
+    }
+
+    public void setHabilidades(String habilidades){
+        this.habilidades = habilidades;
+    }
+
+    public String getIdiomas(){
+        return idiomas;
+    }
+
+    public void setIdiomas(String idiomas){
+        this.idiomas = idiomas;
+    }
+
+    /*public Set<Experiencia> getExperiencias() {
         return experiencias;
     }
 
@@ -126,7 +152,7 @@ public class Curriculum {
 
     public void setHabilidades(Set<Habilidad> habilidades) {
         this.habilidades = habilidades;
-    }
+    }*/
 
 
 

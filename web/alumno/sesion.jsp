@@ -1,5 +1,5 @@
 <%-- 
-    Document   : sesion
+    Document   : Inicio de sesion de alumnos
     Created on : 11/09/2010, 12:22:11 PM
     Author     : carlos sanchez pera
 --%>
@@ -35,11 +35,11 @@
             </div>
 
             <div id="contenido">
-                <br><br><br><br>
+                <br><br>
                 <div id="sesion">
                     <h2>Inicio de sesi&oacute;n:</h2>
                     <br><br><br>
-                    <form name="sesion" action="alumno_show" method="POST">
+                    <form name="sesion" action="sesionAlumnoLogin" method="POST">
                         <table>
                             <tbody>
                             <tr>
@@ -62,11 +62,19 @@
                                 <td>&nbsp;</td>
                                 <td id="registro_link"><a href="<s:url action='alumno_new'/>">Registro</a></td>
                             </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td id="registro_link"><a href="<s:url action='admin_cambio_pass'/>">Recuperar contraseña</a></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td id="registro_link"><a href="<s:url action='admin_recuperar_user'/>">Recuperar nombre usuario</a></td>
+                            </tr>
                             </tbody>
                         </table>
                     </form>
                 </div>
-                <br><br><br><br>
+                <br><br>
             </div><!--contenido-->
 
             <div id="pie">
